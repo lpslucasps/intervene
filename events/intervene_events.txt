@@ -17,6 +17,7 @@ country_event = {
         is_war_leader = yes
         their_opinion = { who = PREV value > 0 }
         NOT = { is_at_war_with = PREV }
+				NOT = { is_same_value = PREV }
       }
       set_country_flag = intervene_friendly_nation
       PREV = { change_variable = { which = intervene_friendly_nations value = 1 } }
